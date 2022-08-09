@@ -4,7 +4,7 @@ import HomeContant from './HomeContant';
 const Home = () => {
     return (
         <div>
-            <h1>Tis is home page</h1>
+            <h1>This is home page</h1>
             <HomeContant></HomeContant>
         </div>
     );
