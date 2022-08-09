@@ -1,10 +1,12 @@
 import React from 'react';
+import HomeCarusel from './HomeCarusel';
 import HomeContant from './HomeContant';
 
 const Home = () => {
     return (
         <div>
-            <h1>This is home page</h1>
+            
+            <HomeCarusel></HomeCarusel>
             <HomeContant></HomeContant>
             
         </div>
