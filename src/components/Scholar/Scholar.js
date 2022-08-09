@@ -18,7 +18,7 @@ const Scholar = () => {
             
             {
                scholars.map(scholar => <SingleScholar
-                key = {scholar.id}
+                key = {scholar._id}
                 scholar = {scholar}
                ></SingleScholar>) 
             } 
