@@ -10,8 +10,14 @@ const SingleScholar = ({scholar}) => {
             <p>Phone: {phone} </p>
             <p>Nid: {nid} </p>
             <p>City: {city} </p>
+            <p>PostCode: {postCode} </p>
             <p>UserEmail: {userEmail} </p>
             <p>BookingDate: {bookingDate} </p>
+
+            <h2>Form</h2>
+               <form >
+                       <input type="text" name="name" placeholder='name' id="" />
+               </form>
             
         </div>
     );
