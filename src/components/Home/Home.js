@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../footer/Footer';
 import HomeCarusel from './HomeCarusel';
 import HomeContant from './HomeContant';
 
@@ -8,6 +9,7 @@ const Home = () => {
             
             <HomeCarusel></HomeCarusel>
             <HomeContant></HomeContant>
+            <Footer></Footer>
             
         </div>
     );
