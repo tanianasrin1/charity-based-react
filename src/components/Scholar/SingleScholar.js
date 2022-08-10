@@ -36,7 +36,7 @@ const SingleScholar = ({scholar}) => {
             <p>UserEmail: {userEmail} </p>
             <p>BookingDate: {bookingDate} </p>
 
-            <h2>Form</h2>
+            {/* <h2>Form</h2> */}
                <form onSubmit={handleformsubmit}>
                        <input type="text" name="UserName" placeholder='UserName' id="" />
                        <input type="text" name="ScholarName" placeholder='ScholarName' id="" />

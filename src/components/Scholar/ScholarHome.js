@@ -6,7 +6,7 @@ import './ScholarHome.css'
 const ScholarHome = () => {
     return (
         <div className='scholar-style'>
-            <h2>ScholarHome</h2>
+            <h2>ScholarsName</h2>
             <Scholar></Scholar>
             <ScholarFrom></ScholarFrom>
         </div>

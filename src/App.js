@@ -21,8 +21,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
-        <Route path="/information" element={<Information></Information>}></Route>
         <Route path="/scholar" element={<ScholarHome></ScholarHome>}></Route>
+        <Route path="/information" element={<Information></Information>}></Route>
         <Route path="/donation" element={<Donation></Donation>}></Route>
       </Routes>
       </InformationContext.Provider>
