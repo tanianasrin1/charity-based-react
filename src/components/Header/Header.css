@@ -9,6 +9,12 @@ nav a{
     
 }
 
+.navbar-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 nav ul{
 
     text-align: center;
