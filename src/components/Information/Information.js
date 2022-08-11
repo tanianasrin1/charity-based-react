@@ -1,11 +1,43 @@
 import React, { useContext } from 'react';
+import { useEffect } from 'react';
 import { InformationContext } from '../../App';
+import { data} from './data';
 
 const Information = () => {
     const [userInfo, setUserInfo ] = useContext(InformationContext);
-    console.log(userInfo)
+    console.log(data);
+
+    useEffect ( () => {
+      setUserInfo(data); 
+
+    },[data])
+
+    const handleSearch = (e) => {
+      e.preventDefault();
+      const searchValue = e.target.searchInput.value;
+    
+      const filteredData = userInfo.filter(
+        (user) =>
+          user.UserName.toLowerCase().includes(searchValue.toLowerCase()) ||
+          user.ScholarName.toLowerCase().includes(searchValue.toLowerCase()) ||
+          user.Phone.toLowerCase().includes(searchValue.toLowerCase()) ||
+          user.Nid.toLowerCase().includes(searchValue.toLowerCase()) ||
+          user.City.toLowerCase().includes(searchValue.toLowerCase()) ||
+          user.status.toLowerCase().includes(searchValue.toLowerCase()) ||
+          user.PostCode.toLowerCase().includes(searchValue.toLowerCase()) ||
+          user.email.toLowerCase().includes(searchValue.toLowerCase()) ||
+          user.BookingDate.toLowerCase().includes(searchValue.toLowerCase())
+      );
+    
+      setUserInfo(filteredData);
+    };
+
     return (
         <div>
+          <form  onSubmit={handleSearch}>
+              <input type="text" name="searchInput" placeholder='search' id="" />
+              <input type="submit" value="submit" />
+          </form>
             <table class="table table-striped">
   <thead>
     <tr>
@@ -22,6 +54,8 @@ const Information = () => {
     </tr>
   </thead>
   <tbody>
+
+
      
      {
         userInfo.map(singleUser => <tr>

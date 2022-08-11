@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+       "name": "Free education",
+      "img": "https://i.ibb.co/cgschz6/rsz-ph-25767-93584.jpg",
+      "des": "Much of the food we eat is grown, harvested, and then transported to warehouses where it is sorted, packed, and stored until it can be sold and transported to the final destination."
+    },
+
+    {
+      "id": 2,
+       "name": "Distribution of food",
+      "img": "https://i.ibb.co/CM7YZVy/rsz-ma.jpg",
+      "des": "Traders buy produce in bulk from all over the world, and then they sell this produce to supermarkets, retailers, and wholesalers. If there are disruptions in this system or if food cannot be sold fast enough"
+    },
+    {
+      "id": 3,
+       "name": "Flood victims,",
+      "img": "https://i.ibb.co/9qf36VJ/rsz-31.jpg",
+      "des": "This has negative consequences for all of us: the farmers who grew that food don’t get paid, the traders lose profit, and all of the resources that went into growing the food "
+    },
+    {
+      "id": 4,
+       "name": "Mosque construction",
+      "img": "https://i.ibb.co/8x3hnSN/rsz-mab.jpg",
+      "des": "With their AI-powered quality control system and an automated dashboard that are deployed in a Software as a Service (SaaS) model, they are helping food traders optimize their storage and supply chains"
+    }
+   
+
+]
