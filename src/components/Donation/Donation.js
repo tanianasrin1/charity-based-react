@@ -4,6 +4,7 @@ import './Donation.css'
 
 const Donation = () => {
   const [cards, setCards] = useState([]);
+  
     useEffect(() => {
         fetch('cardsdata.json')
           .then(res => res.json())

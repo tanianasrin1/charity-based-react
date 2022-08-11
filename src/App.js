@@ -9,13 +9,22 @@ import Donation from './components/Donation/Donation';
 import ScholarHome from './components/Scholar/ScholarHome';
 import Footer from './components/footer/Footer';
 import { useState } from 'react';
+import {data} from './components/Information/data';
 export const InformationContext = React.createContext();
+export const DonationContext = React.createContext();
+
 
 function App() {
-  const [userInfo, setUserInfo ] = useState([]);
+  const [userInfo, setUserInfo ] = useState([...data]);
+  const [donation, setDonation] = useState([]);
+
+  
   return (
     <div className="App">
-      <Header></Header>
+   
+    <DonationContext.Provider value={[donation, setDonation]}>
+
+    <Header></Header>
       
       <InformationContext.Provider value={[userInfo, setUserInfo ]}>
       <Routes>
@@ -26,6 +35,8 @@ function App() {
         <Route path="/donation" element={<Donation></Donation>}></Route>
       </Routes>
       </InformationContext.Provider>
+
+    </DonationContext.Provider>
         
      
       

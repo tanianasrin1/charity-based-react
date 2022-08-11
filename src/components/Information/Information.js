@@ -1,16 +1,18 @@
 import React, { useContext } from 'react';
 import { useEffect } from 'react';
 import { InformationContext } from '../../App';
-import { data} from './data';
+// import { data} from './data';
 
 const Information = () => {
     const [userInfo, setUserInfo ] = useContext(InformationContext);
-    console.log(data);
+    // console.log(data); 
+    
+    // useEffect ( () => {
+    //   setUserInfo(data); 
 
-    useEffect ( () => {
-      setUserInfo(data); 
+    // },[data])
 
-    },[data])
+    
 
     const handleSearch = (e) => {
       e.preventDefault();
